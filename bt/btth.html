@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let count = 0; // số lần nhập
+        let password = "123456";
+        let passwordInput;
+
+        do {
+            passwordInput = prompt("Mời bạn nhập mật khẩu");
+            if (passwordInput !== password){
+                console.log("Mật khẩu bị sai lần thứ", count);
+                
+                count++;
+            }else {
+                console.log("Đăng nhập thành công");
+                break;
+                
+            }
+        } while (count <= 5 )
+    </script>
+</body>
+</html>
